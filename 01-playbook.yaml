@@ -1,0 +1,10 @@
+- name: ping the server  ## connect to the server
+  hosts: frontend ## which server we are connecting present in inventory.ini
+  ##Lists of tasks/collecetions/mof=dules
+  tasks:
+  - name: ping
+    ansible.builtin.ping:
+
+
+    #### Executing in Mobexterm as ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 01-playbook.yaml
+    
